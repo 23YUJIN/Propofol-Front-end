@@ -1,0 +1,516 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: "good_brush";
+  src: url("./font/Good\ Brush.ttf");
+}
+
+@font-face {
+  font-family: "pretend-medium";
+  src: url("./font/Pretendard-Medium.ttf");
+}
+
+@font-face {
+  font-family: "pretend-bold";
+  src: url("./font/Pretendard-Bold.ttf");
+}
+
+@font-face {
+  font-family: "pretend-EBold";
+  src: url("./font/Pretendard-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "pretend-ELight";
+  src: url("./font/Pretendard-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "pretend-light";
+  src: url("./font/Pretendard-Light.ttf");
+}
+
+@font-face {
+  font-family: "pretend-Reg";
+  src: url("./font/Pretendard-Regular.ttf");
+}
+
+@font-face {
+  font-family: "pretend-SBold";
+  src: url("./font/Pretendard-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "pretend-Thin";
+  src: url("./font/Pretendard-Thin.ttf");
+}
+
+@font-face {
+  font-family: "quiche-Sans";
+  src: url("./font/QuicheSans.ttf");
+}
+
+@font-face {
+  font-family: "consoleFont";
+  src: url("./font/neodgm.ttf");
+}
+
+@font-face {
+  font-family: "consoleFont2";
+  src: url("./font/PFStardust.ttf");
+}
+
+@font-face {
+  font-family: "rumpi";
+  src: url("./font/Rumpi.ttf");
+}
+
+@font-face {
+  font-family: "iroBatang";
+  src: url("./font/IropkeBatangM.ttf");
+}
+
+@font-face {
+  font-family: "maruBuri";
+  src: url("./font/MaruBuri/MaruBuri-Regular.ttf");
+}
+
+@font-face {
+  font-family: "nanumGothic";
+  src: url("./font/NanumGothic/NanumGothic.ttf");
+}
+
+@font-face {
+  font-family: "nanumMyeongjo";
+  src: url("./font/NanumMyeongjo/NanumMyeongjo.ttf");
+}
+
+@font-face {
+  font-family: "nanumPen";
+  src: url("./font/NanumPen/NanumPen.ttf");
+}
+
+@font-face {
+  font-family: "nanumSquare";
+  src: url("./font/NanumSquare/NanumSquareR.ttf");
+}
+
+@font-face {
+  font-family: "tvn";
+  src: url("./font/tvN/tvN\ 즐거운이야기\ Medium.ttf");
+}
+
+@font-face {
+  font-family: "dolce";
+  src: url("./font/Dolce.ttf");
+}
+
+@font-face {
+  font-family: "timeless";
+  src: url("./font/Timeless.ttf");
+}
+
+@font-face {
+  font-family: "timelessB";
+  src: url("./font/Timeless-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Bodo_Amat";
+  src: url("./font/Bodo\ Amat.ttf");
+}
+
+.swal2-popup {
+  font-size: 1rem !important;
+  font-family: "pretend-medium" !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+}
+
+.react-datepicker__input-container>input {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.ql-toolbar.ql-snow {
+  border: 0px none rgb(255, 255, 255) !important;
+}
+
+.project.ql-toolbar.ql-snow {
+  border-top: 0px none rgb(255, 255, 255) !important;
+  border-left: 0px none rgb(255, 255, 255) !important;
+  border-right: 0px none rgb(255, 255, 255) !important;
+  border-bottom: 1px solid rgb(216, 216, 216) !important;
+}
+
+.ql-editor {
+  height: 100%;
+  font-size: 18px !important;
+  font-family: "iroBatang" !important;
+}
+
+.quill {
+  padding-left: 2px;
+  padding-right: 2px;
+  height: fit-content;
+}
+
+.ql-container.ql-bubble {
+  max-width: 54rem;
+  width: 100%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%);
+  border: 0px none rgb(255, 255, 255) !important;
+}
+
+.ql-container.ql-snow {
+  max-width: 60rem;
+  min-width: 20rem;
+  width: 100%;
+  height: 80vh;
+  border: 0px none rgb(255, 255, 255) !important;
+}
+
+/*
+pre::before {
+  counter-increment: line;
+  content: counter(line);
+  display: inline-block;
+  border-right: 1px solid #ddd;
+  padding: .5em;
+  margin-right: .5em;
+  color: #888
+}
+*/
+
+.ql-syntax {
+  /*counter-reset: line;*/
+  /*border-radius: 1rem !important;*/
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/*
+pre::after {
+  content: "\n";
+}
+*/
+
+/*---*/
+
+.ql-snow .ql-size .ql-picker-item[data-value="12px"]::before {
+  content: "12px";
+  font-size: 12px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="14px"]::before {
+  content: "14px";
+  font-size: 14px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="16px"]::before {
+  content: "16px";
+  font-size: 16px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="18px"]::before {
+  content: "18px";
+  font-size: 18px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="20px"]::before {
+  content: "20px";
+  font-size: 20px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="22px"]::before {
+  content: "22px";
+  font-size: 22px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="24px"]::before {
+  content: "24px";
+  font-size: 24px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="26px"]::before {
+  content: "26px";
+  font-size: 26px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="28px"]::before {
+  content: "28px";
+  font-size: 28px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="30px"]::before {
+  content: "30px";
+  font-size: 30px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="36px"]::before {
+  content: "36px";
+  font-size: 36px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="48px"]::before {
+  content: "48px";
+  font-size: 48px !important;
+}
+
+.ql-snow .ql-size .ql-picker-item[data-value="60px"]::before {
+  content: "60px";
+  font-size: 60px !important;
+}
+
+/*---*/
+.ql-snow .ql-font .ql-picker-item::before {
+  font-size: 20px;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="iroBatang"]::before {
+  content: "iroBatang";
+  font-family: "iroBatang" !important;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="nanumGothic"]::before {
+  content: "nanumGothic";
+  font-family: "nanumGothic" !important;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="nanumMyeongjo"]::before {
+  content: "nanumMyeongjo";
+  font-family: "nanumMyeongjo" !important;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="maruBuri"]::before {
+  content: "maruBuri";
+  font-family: "maruBuri" !important;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="nanumPen"]::before {
+  content: "nanumPen";
+  font-family: "nanumPen" !important;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="nanumSquare"]::before {
+  content: "nanumSquare";
+  font-family: "nanumSquare" !important;
+}
+
+.ql-snow .ql-font .ql-picker-item[data-value="tvn"]::before {
+  content: "tvn";
+  font-family: "tvn" !important;
+}
+
+/*---*/
+
+.ql-snow .ql-font .ql-picker-label::before {
+  font-size: 15px;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="iroBatang"]::before {
+  content: "iroBatang";
+  font-family: "iroBatang" !important;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="nanumGothic"]::before {
+  content: "nanumGothic";
+  font-family: "nanumGothic" !important;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="nanumMyeongjo"]::before {
+  content: "nanumMyeongjo";
+  font-family: "nanumMyeongjo" !important;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="maruBuri"]::before {
+  content: "maruBuri";
+  font-family: "maruBuri" !important;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="nanumPen"]::before {
+  content: "nanumPen";
+  font-family: "nanumPen" !important;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="nanumSquare"]::before {
+  content: "nanumSquare";
+  font-family: "nanumSquare" !important;
+}
+
+.ql-snow .ql-font .ql-picker-label[data-value="tvn"]::before {
+  content: "tvn";
+  font-family: "tvn" !important;
+}
+
+/*---*/
+
+.ql-snow .ql-font {
+  width: 8rem !important;
+}
+
+.ql-snow .ql-font .ql-picker-item {
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+
+.ql-font-iroBatang {
+  font-family: "iroBatang";
+}
+
+.ql-font-nanumGothic {
+  font-family: "nanumGothic";
+}
+
+.ql-font-nanumMyeongjo {
+  font-family: "nanumMyeongjo";
+}
+
+.ql-font-maruBuri {
+  font-family: "maruBuri";
+}
+
+.ql-font-nanumPen {
+  font-family: "nanumPen";
+}
+
+.ql-font-nanumSquare {
+  font-family: "nanumSquare";
+}
+
+.ql-font-tvn {
+  font-family: "tvn";
+}
+
+.text-shadow-sm {
+  text-shadow: 0 0 0.2em rgb(0, 0, 0), 0 0 0.01em rgb(0, 0, 0);
+}
+
+.text-shadow {
+  text-shadow: 0 0 1em rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0);
+}
+
+.text-shadow-md {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.text-shadow-white {
+  text-shadow: 0 0 0.25em rgb(255, 255, 255, 0.3),
+    0 0 0.5em rgb(255, 255, 255, 0.2);
+}
+
+.text-shadow-none {
+  text-shadow: none;
+}
+
+.before-bubble::before {
+  transform: translateY(22px);
+  transform: translateX(0px);
+  border-top: 12px solid white;
+  border-right: 12px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  z-index: 20;
+}
+
+.after-bubble::after {
+  transform: translateY(22px);
+  transform: translateX(12.57rem);
+  border-top: 12px solid gray;
+  border-right: 12px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  z-index: 10;
+}
+
+.bubble::before {
+  transform: translateY(22px);
+  transform: translateX(0px);
+  border-top: 12px solid white;
+  border-right: 12px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  z-index: 20;
+}
+
+.bubble::after {
+  transform: translateY(22px);
+  transform: translateX(12.57rem);
+  border-top: 12px solid gray;
+  border-right: 12px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  z-index: 10;
+}
+
+.form-tick:checked {
+  border-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+  background-size: 100% 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: rgb(188, 189, 255);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
